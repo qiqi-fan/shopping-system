@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../css/商品详情.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/商品详情.js"></script>
+</head>
+<body>
+    <!-- 头部栏 -->
+    <div class="nav">
+        <a href="#" class="into">Linda</a>
+        <div class="part">
+            <a href="首页.html">商城首页</a>
+            <a href="店铺及商品.html">店铺及商品</a>
+            <a href="购物车.html">购物车</a>
+            <a href="个人主页.html">个人主页</a>
+        </div>
+        <a href="#" class="help">帮助及反馈 </a>
+    </div>
+    <!-- logo及搜索框 -->
+    <div class="search">
+        <div class="logo"><img src="../html/img/logo.png" alt="logo" title="logo" width="200px" ></div>
+        <!-- 店铺名称 -->
+        <div class="shopbox">
+            <h2>
+                <a class="shopname" href="#">李宁官方网店|</a>
+            </h2>
+            
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder="输入关键词">
+            <button class="but">搜本店</button>
+        </div>
+        
+        
+    </div>
+
+        <!-- 店铺宝贝总框框 -->
+        <div class="w fenlei">
+            <div class="choice">店铺宝贝</div>
+        </div>
+        <div class="line"></div>
+
+
+    <div class="goods-info">
+        <div class="picture">
+            <img src="../html/img/商品2/2.1.jpg" alt="" class="big-picture">
+        </div>
+
+        <div class="small-pic-all">
+            <img src="../html/img/商品2/2.1.jpg" alt="" class="small-img">
+            <img src="../html/img/商品2/2.2.jpg" alt="" class="small-img">
+            <img src="../html/img/商品2/2.3.jpg" alt="" class="small-img">
+            <img src="../html/img/商品2/2.4.jpg" alt="" class="small-img">
+        </div>
+        <div class="text-info">
+            <ul>
+                <li class="text-title">李宁板鞋女鞋天迹2022新款鞋子潮流涂鸦滑板鞋运动鞋情侣小白鞋女</li>
+                <li class="price">价格：<span class="price-span">￥378</span></li>
+                <li class="size">颜色分类：
+                    <a href="#" class="size-img">
+                        <img src="../html/img/商品2/ys1.jpg" alt="" class="size-img">
+                    </a>
+                    <a href="#" class="size-img">
+                        <img src="../html/img/商品2/ys2.jpg" alt="" class="size-img">
+                    </a>
+                </li>
+                <li class="text-num">数量：
+                   <a href=""><button class="num">-</button></a> 
+                   <input type="text" value=" 0" class="number">
+                   <a href=""><button class="num">+</button></a>
+                   件
+                </li>
+                <li class="text-btn">
+                    <button class="purchase">立即购买</button>
+                    <button class="join" onclick="liningjoin()">加入购物车</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+       <ul class="wrapper">
+        <li>
+            <!-- <a href="#" class="jieshao" id="btn01">宝贝详情</a> -->
+            <button class="jieshao" id="btn01">宝贝详情</button>
+        </li>
+        <li>
+            <!-- <a href="#" class="jieshao" id="btn02">评价</a> -->
+            <button class="jieshao" id="btn02">评价</button>
+
+        </li>
+        <!-- <li>
+            <a href="" class="jieshao" id="three">专享服务</a>
+        </li> -->
+       </ul>
+
+       <!-- 宝贝详情 -->
+       <div class="goods-information" id="info">
+          <ul>
+            <li>品牌: Lining/李宁</li>
+            <li>闭合方式:系带</li>
+            <li>颜色分类:标准白/浅粉红云雾白/桃橘...</li>
+            <li>吊牌价:439</li>
+            <li>上市时间:2022年春季</li>
+            <li>性别:女子</li>
+            <li>是否商场同款:是</li>
+            <li>品名:天迹</li>
+            <li>销售渠道类型:纯电商(只在线上销售)</li>
+            <li>鞋码:3435 35.5 36 37 37.53839 3...</li>
+            <li>流行元素:车缝线</li>
+            <li>鞋帮高度:低帮（帮高小于10cm)</li>
+            <li>款式:板鞋</li>
+            <li>销售渠道类型:商场同款(线上线下都销...</li>
+            <li>功能:回弹减震</li>
+            <li>是否瑕疵:否</li>
+            <li>鞋底材质:橡胶</li>
+            <li>帮面材质：合成革</li>
+          </ul>         
+       </div>
+
+       <!-- 评价 -->
+       <div class="evaluate" id="evalu">
+        <div class="eva-checkbox" id="inputs">
+            <input type="checkbox" id="check-box" >全部
+            <input type="checkbox" id="check" name="user">追评
+            <input type="checkbox" id="check" name="user">图片
+        </div>
+        <div class="eva-info">
+            <div class="information">
+                <div class="pre">
+                    <p>初次评价：</p>
+                    <!-- <div>初次评价：</div> -->
+                    <!-- 初次评价： -->
+                    <div>
+                        拜托这个包包真的真的很好看，很大很好，没有廉价感，很便宜，我觉得很精致，算是买这么多包包以来最好的一次购物体验，宝贝们冲，真的冲！不是托相信我，有点激动。
+                    </div>
+                    
+                    <div>
+                        <img src="../html/img/商品1/pj1.jpg" alt="">
+                        <img src="../html/img/商品1/pj2.jpg" alt="">
+                        <img src="../html/img/商品1/pj3.jpg" alt="">
+                     </div>
+                </div>
+        
+            <div class="zhui">
+                <p>收到4天后追评：</p>
+                <div>真的好看呀</div>
+                
+            </div>
+         </div>
+            <div class="purchase-info">
+                颜色分类：珠光白【无链条】<br>
+                数量：1件<br>
+                用户：tb32******342
+            </div>
+       </div>
+
+       <div class="eva-info">
+        <div class="information">
+            <div class="pre">
+                <p>初次评价：</p>
+                <!-- <div>初次评价：</div> -->
+                <!-- 初次评价： -->
+                <div>
+                    首先，这个面料真的非常非常好，很光滑的那种，针脚也很细密，而且在阳光下好像还有些亮亮的，我拍了近照图可以看出来面料的，底下是皮质的，容易立起来包包也不会脏，这个包绝对结实，又好看又实用！！！我绝对是发自内心的评价，喜欢就买它吧，真的挺好的，玫瑰香包也很好闻，淡淡的清香
+                </div>
+                
+                <div>
+                    <img src="../html/img/商品1/pj4.jpg" alt="">
+                    <img src="../html/img/商品1/pj5.jpg" alt="">
+                    <img src="../html/img/商品1/pj6.jpg" alt="">
+
+                 </div>
+            </div>
+    
+        <div class="zhui">
+        </div>
+     </div>
+    <div class="purchase-info">
+            颜色分类：珠光白【带珍珠链条】<br>
+            数量：2件<br>
+            用户：tb49********387
+    </div>
+        </div>
+
+        <div class="eva-info">
+            <div class="information">
+                <div class="pre">
+                    <p>初次评价：</p>
+                    <!-- <div>初次评价：</div> -->
+                    <!-- 初次评价： -->
+                    <div>
+                        包包很仙气 面料是那种硬硬的布 可以立住 带上这个珍珠链条 真的特别好看 绝对值这个价钱 姐妹们快入手吧
+                    </div>
+                    
+                    <div>
+                        <img src="../html/img/商品1/pj7.jpg" alt="">
+                        <img src="../html/img/商品1/pj8.jpg" alt="">
+
+                     </div>
+                </div>
+        
+            <div class="zhui">
+                <p>收到4天后追评：</p>
+                <div>比我预想的要小一点，不过***ad刚刚好，背起来感觉也不错，上课或者是逛街想带个大点的包都可以。线头很多，是真的很多，味道也挺大，需要散散味，这价格也买不了自行车，我觉得可以入手</div>
+                
+            </div>
+         </div>
+        <div class="purchase-info">
+                颜色分类：珠光白【无链条】<br>
+                数量：1件<br>
+                用户：tb39*******332
+        </div>
+       </div>
+
+        </div>
+        
+
+    </div>
+</body>
+</html>

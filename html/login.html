@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录注册</title>
+    <link rel="stylesheet" href="../css/longin.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/login-script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <!-- 注册 -->
+            <form id="test-register" action="insert.html" onsubmit="return checkRegisterForm()">
+                <div class="register-box hidden">
+                    <h1>register</h1>
+                    <select name="" id="select-identify">
+                        <option value="">商家</option>
+                        <option value="">用户</option>
+                        <option value="">管理员</option>
+                    </select>
+                    <input type="text" id="username" name="username" placeholder="用户名">
+                    <input type="email" placeholder="邮箱" id="email">
+                    <input type="password" id="password" name="password" placeholder="密码">
+                    <input type="password" id="password2" placeholder="确认密码">
+                    <button id="btn02">完成注册</button>
+                </div>
+            </form>
+
+         
+           
+            <div class="login-box">
+              
+                <div class="login">
+                    <h1>login</h1>
+                    <select name="" id="select-identify">
+                        <option value="">商家</option>
+                        <option value="">用户</option>
+                        <option value="">管理员</option>
+                    </select>
+                    <input type="text" id="user" name="user" placeholder="用户名">
+                    <input type="password" id="pass" name="pass" placeholder="密码">
+                    <button id="btn01">登录</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="con-box left">
+            <h2>欢迎来到<span>内购网</span></h2>
+            <p>快来购买你喜欢的<span>商品</span>吧</p>
+            <img src="" alt="">
+            <p>已有帐号</p>
+            <button id="login">去登录</button>
+        </div>
+        <div class="con-box right">
+            <h2>欢迎来到<span>内购网</span></h2>
+            <p>快来看看你喜欢的<span>商品</span>吧</p>
+            <img src="" alt="">
+            <p>没有帐号?</p>
+            <button id="register">去注册</button>
+        </div>
+    </div>
+
+</body>
+<!--  -->
+
+</html>

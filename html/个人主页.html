@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/个人主页.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/distpicker.data.js"></script>
+    <script src="../js/distpicker.js"></script>
+    <link rel="stylesheet" href="../font/css/all.css">
+</head>
+<body>
+    
+    <!-- 头部栏 -->
+    <div class="nav">
+        <a href="#" class="into">Linda</a>
+        <div class="part">
+            <a href="首页.html">商城首页</a>
+            <a href="店铺及商品.html">店铺及商品</a>
+            <a href="购物车.html">购物车</a>
+            <a href="个人主页.html">个人主页</a>
+        </div>
+        <a href="#" class="help">帮助及反馈 </a>
+    </div>
+    <!-- logo及搜索框 -->
+
+    <div class="message" id="part1">
+        <!-- <i class="fas fa-caret-down"></i> -->
+
+        <ul class="topper">
+              
+            <button id="but1">
+                <li class="topper-list" id="topper-list1">个人资料
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                </li>
+            </button >
+            <button id="but2" id="topper-list2">
+                <li class="topper-list">我的订单
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                </li>
+            </button>  
+        </ul>
+        <div class="left">
+            <ul class="btn">
+                    <!-- <button id="play1">
+                    </button>
+                    个人资料 -->
+                <a href="javascript:;" id="play1">个人资料</a>
+                <br>
+                <a href="javascript:;" id="play2">收货地址</a>
+
+                <!-- <button id="play2">
+                    收货地址
+                </button> -->
+                
+            </ul>
+        </div>
+        <div class="content" id="demo1" >
+            <ul class="content-ul">
+                <li class="content-li">当前头像:
+                    <br>
+                    <img class="person-img" id="my-img" src="" alt="">
+                    <!-- <input class="content-btn" id="File-btn" type="button" value="修改头像" @click="clickFile"> -->
+                    <input type="file" id="file" >
+                </li >
+                <li class="content-li"> 
+                    昵称:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" class="content-input" id="alert-name">
+                    <button class="content-btn" id="alert-name-btn">修改</button>
+                    
+                </li> 
+                <li class="content-li" id="phone">
+                    绑定手机：
+                    <input type="text" class="content-input" id="alert-name2">
+                    <button class="content-btn" id="alert-name-btn2">绑定</button>
+                </li>
+                <li class="content-li" id="company">
+                    身份绑定：
+                    <select name="" id="">
+                        <option value="">公司总部</option>
+                        <option value="">杭州分部</option>
+                        <option value="">上海分部</option>
+                        <option value="">北京分部</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">人事部</option>
+                        <option value="">技术部</option>
+                        <option value="">市场营销部</option>
+                    </select>
+
+                </li>
+                <li class="content-li" id="worker">
+                    员工ID:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="" class="content-input">
+                    <button class="content-btn" id="alert-name-btn3">绑定</button>
+
+                </li>
+                <li class="content-li" id="jifen">
+                    积分余额：
+                    <input readonly type="text" placeholder="" class="content-input" value="100" >
+                    <button class="content-btn" id="alert-name-btn4">积分明细</button>
+
+                </li>
+                <li class="content-li" id="card">
+                    员工卡： &nbsp;&nbsp;&nbsp;
+                    <input class="content-input" type="text" placeholder="请输入卡号" id="add_card">
+                    <button class="content-btn" id="alert-name-btn5">绑定</button>
+                    <br>
+                    <!-- <img src="" alt="" width="300px" height="150px" style="margin-left: 80px;"> -->
+                </li>
+            </ul>
+        </div>
+        <div class="content2" id="demo2" >
+            <ul class="address">
+                <li class="address-li" style="color: #4c615e; font-size: 20px;">
+                    新增收货地址
+                </li>
+                <li class="address-li">
+                    &nbsp;&nbsp;&nbsp;地址信息：
+                    <!-- <input type="text" placeholder="请选择省/市/区/街道"> -->
+                    <div data-toggle="distpicker" class="distpicker">
+
+                        <div>
+                            <select id="province" name="province" data-province="---- 选择省 ----"></select>
+                        </div>
+                   
+                        <div>
+                            <select id="city" name="city" data-city="---- 选择市 ----"></select>
+                        </div>
+                   
+                        <div>
+                            <select id="area" name="area" data-district="---- 选择区 ----"></select>
+                        </div>
+                   
+                   </div>
+                </li>
+                <li class="address-li">
+                    &nbsp;&nbsp;&nbsp;详细地址：
+                    <input type="text" placeholder="请输入详细地址信息，如道路、门牌号、小区、楼栋号、是、单元等信息" id="add_info">
+                </li>
+                <li class="address-li">
+                    &nbsp;&nbsp;&nbsp;邮政编码：
+                    <input type="text" name="" id="code" placeholder="请填写邮编">
+
+                </li>
+                <li class="address-li">
+                    收货人姓名：
+                    <input type="text" placeholder="长度不超过25个字符" id="add-name" >
+                    <span id="userinfo"></span>
+                </li>
+                <li class="address-li">
+                    &nbsp;&nbsp;&nbsp;手机号码：
+                    <input type="text" placeholder="请输入收货人手机号" id="add_phone">
+                </li>
+                <li class="address-li">
+                    <input type="checkbox" id="moren">设为默认地址
+                    
+                </li>
+                <li class="address-li">
+                    <button class="btn2" id="add-btn">保存</button>
+                </li>
+            </ul>
+            <table border="1px" class="all-address" style="width: 900px;" id="tab">
+                <tr class="first-tr">
+                    <td>收货人</td>
+                    <td>所在地区</td>
+                    <td>详细地址</td>
+                    <td>邮编</td>
+                    <td>电话号码</td>
+                    <td>操作</td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>张三</td>
+                        <td>浙江杭州</td>
+                        <td>下沙浙江理工大学</td>
+                        <td>003260</td>
+                        <td>19818515545</td>
+                        <td>
+                            <a href="javascript:;"  onclick='{if(confirm("你确定要删除该条地址信息？")) {deleteCurrentRow(this); }else {}}'>删除</a>
+                            <a href="javascript:;" id="change">修改</a>
+                            <a href="javascript:;">默认</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>刘素</td>
+                        <td>浙江温州</td>
+                        <td>鹿城区</td>
+                        <td>909081</td>
+                        <td>13434561234</td>
+                        <td>
+                            <a href="javascript:;" onclick='{if(confirm("你确定要删除该条地址信息？")) {deleteCurrentRow(this); }else {}}'>删除</a>
+                            <a href="javascript:;">修改</a>   
+                            <a class="device" href="javascript:;">设为默认</a>
+                        </td>
+                    </tr>
+                </tbody>
+              
+            </table>
+        </div>
+        <!-- 积分明细弹出层 -->
+        <div class="jifendiv">
+        <p>积分明细<i class="fas fa-times" id="times"></i></p>
+        <div>
+            <table  border="1px solid " style="border-collapse: separate; border-left-spacing: 10px;">
+                <tr>
+                    <th>时间</th>
+                    <th>积分</th>
+                    <th>审批人</th>
+                    <th>原因</th>
+                </tr>
+                <tr>
+                    <td>2022-09-01</td>
+                    <td>+10</td>
+                    <td>管理员1</td>
+                    <td>工作奖励</td>
+                </tr>
+                <tr>
+                    <td>2022-09-11</td>
+                    <td>+50</td>
+                    <td>管理员2</td>
+                    <td>部门活动</td>
+                </tr>
+                <tr>
+                    <td>2022-09-22</td>
+                    <td>+10</td>
+                    <td>管理员1</td>
+                    <td>工作奖励</td>
+                </tr>
+            </table>
+        </div>
+        </div >
+        <!-- 绑定员工信息弹出层 -->
+        <div class="tel-check">
+            <p>绑定员工信息<i class="fas fa-times" id="shut"></i></p>
+            请输入手机号：<input type="number"/>
+            <br>
+            <input type="submit" value="     发送验证码:     " id="ver-code">
+            <input type="text" name=""  placeholder="输入验证码">
+            <!-- <input type="submit" value="验证码已发送" id="sucess"> -->
+            <br>
+            <button id="bind">绑定</button>
+        </div>
+        <!-- 绑定员工卡弹出层 -->
+        <div class="bindcard">
+            <p>绑定员工卡<i class="fas fa-times" id="shut2"></i></p>
+            请输入您的密码：<input type="password" style="height:25px ;"/>
+            <br>
+            <button id="bind2">绑定</button>
+        </div>
+    </div>
+    <!-- 修改地址弹窗 -->
+    <!-- 悬浮层 遮罩层-->
+    <div id="cover" style="background-color: black;"></div>
+    <!-- 弹出层1 -->
+    <div class="changeAddr">
+        <p><i class="fas fa-times" id="times1"></i></p>
+        <!-- <p>修改地址</p> -->
+        <ul class="address">
+            <li class="address-li" style="color: #4c615e; font-size: 20px;">
+                修改地址信息
+            </li>
+            <li class="address-li">
+                &nbsp;&nbsp;&nbsp;地址信息：
+                <!-- <input type="text" placeholder="请选择省/市/区/街道"> -->
+                <div data-toggle="distpicker" class="distpicker">
+
+                    <div>
+                        <select id="province2" name="province" data-province="---- 选择省 ----"></select>
+                    </div>
+               
+                    <div>
+                        <select id="city2" name="city" data-city="---- 选择市 ----"></select>
+                    </div>
+               
+                    <div>
+                        <select id="area2" name="area" data-district="---- 选择区 ----"></select>
+                    </div>
+               
+               </div>
+            </li>
+            <li class="address-li">
+                &nbsp;&nbsp;&nbsp;详细地址：
+                <input type="text" placeholder="请输入详细地址信息，如道路、门牌号、小区、楼栋号、是、单元等信息" id="add_info2">
+            </li>
+            <li class="address-li">
+                &nbsp;&nbsp;&nbsp;邮政编码：
+                <input type="text" name="" id="code2" placeholder="请填写邮编">
+
+            </li>
+            <li class="address-li">
+                收货人姓名：
+                <input type="text" placeholder="长度不超过25个字符" id="add-name2" >
+                <span id="userinfo"></span>
+            </li>
+            <li class="address-li">
+                &nbsp;&nbsp;&nbsp;手机号码：
+                <input type="text" placeholder="请输入收货人手机号" id="add_phone2">
+            </li>
+            <!-- <li class="address-li">
+                <input type="checkbox" name="" id="moren2">设为默认地址
+                
+            </li> -->
+            <li class="address-li">
+                <button class="btn2" id="add-btn2">保存</button>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div class="order" id="part2">
+
+        <ul class="topper">
+            <button id="but3">
+                <li class="topper-list" id="topper-list1">个人资料 </li>
+            </button >
+            <button id="but4">
+                <li class="topper-list" id="topper-list2">我的订单
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                </li>
+            </button>
+        </ul>
+        <div class="left">
+            <ul class="btn">
+                    <button id="list1">
+                    待付款
+                    </button>
+               
+                <button id="list2">
+                    待发货
+                </button>
+
+                <button id="list3">
+                    待收货
+                </button>
+                
+                <button id="list4">
+                    已完成
+                </button>
+            </ul>
+        </div>
+        <!-- 待付款 -->
+        <div class="content3" id="demo3">
+            <ul class="order-list">
+                <li class="order-li" id="first-li">宝贝</li>
+                <li class="order-li">单价</li>
+                <li class="order-li">数量</li>
+                <li class="order-li">订单操作</li>
+                <li class="order-li">实付款</li>
+                <li class="order-li">交易状态</li>
+            </ul>
+
+            <div class="order-message">
+
+                <ul class="list-message">
+                    <li >&emsp;&emsp;&emsp;日期：2022-9-30</li>
+                    <li >订单号：98987165</li>
+                    <li style="color:#936a01;">店铺：格兰衣府服饰旗舰店</li>
+                </ul>
+                <ul class="goods-message">
+                    <a href=""></a>
+                        <li><img src="../html/img/商品主页/1.png" alt="" width="160px" height="100px"></li>
+
+                        <li><div class="mes">加绒新款冬季爆款ins潮牌卫衣男内搭2022上衣春秋外套男装打底衫</div>
+                            <br>
+                            <div>颜色分类：XL 001 </div>
+                        </li>
+                    </a>
+                    <li> ￥：99.00</li>
+                    <li class="quantity"> 1</li>
+                    <li class="goods-operate">
+                        <a href="../html/结算.html">立即付款</a>
+                        <br>
+                        <a class="cancle" href="javascript:;">取消订单</a>
+                    </li>
+                    <li class="total-price"> 99：00</li>
+                    <li class="trade-state">
+                        待付款
+                        <!-- <br>
+                        <a href="">订单详情</a>
+                        <br> -->
+                        <!-- <a href="">查看物流</a> -->
+                    </li>
+                </ul>
+            </div>
+
+            
+            
+        </div>
+
+        <!-- 待发货 -->
+        <div class="content4" id="demo4">
+            <ul class="order-list">
+                <li class="order-li" id="first-li">宝贝</li>
+                <li class="order-li">单价</li>
+                <li class="order-li">数量</li>
+                <li class="order-li">商品操作</li>
+                <li class="order-li">实付款</li>
+                <li class="order-li">交易状态</li>
+            </ul>
+            <div class="order-message">
+
+                <ul class="list-message">
+                    <li >&emsp;&emsp;&emsp;日期：2022-10-01</li>
+                    <li >订单号:98976656</li>
+                    <li style="color:#936a01;">店名：NUMON女装</li>
+                </ul>
+                <ul class="goods-message">
+                    <a href="">
+                        <li><img src="../html/img/商品主页/16.png" alt="" width="160px" height="100px"></li>
+
+                        <li><div class="mes">真维斯卫衣女春秋季圆领2022新款上衣服潮牌潮流女生潮ins长袖T恤</div>
+                            <br>
+                            <div>颜色分类：粉色 L </div>
+                        </li>
+                    </a>
+                    <li> ￥98.00 </li>
+                    <li class="quantity"> 1</li>
+                    <li class="goods-operate">
+                        <a href="">催发货</a>
+                        <br>
+                        <a href="">申请退款</a>
+                    </li>
+                    <li class="total-price"> ￥180.00</li>
+                    <li class="trade-state">
+                        待发货
+                        <br>
+                        <!-- <a href="">订单详情</a>
+                        <br> --> 
+                        <a href="">联系商家</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-message">
+
+                <ul class="list-message">
+                    <li >&emsp;&emsp;&emsp;日期：2022-10-01</li>
+                    <li >订单号:98934156</li>
+                    <li style="color:#936a01;">店名：COACH/蔻驰官方旗舰店</li>
+                </ul>
+                <ul class="goods-message">
+                    <a href="">
+                        <li><img src="../html/img/商品主页/11.png" alt="" width="160px" height="100px"></li>
+
+                        <li><div class="mes">COACH/蔻驰官方 中号女士PVC配皮大容量单肩手提包托特包 4455</div>
+                            <br>
+                            <div>颜色分类：白色 </div>
+                        </li>
+                    </a>
+                    <li> ￥98.00 </li>
+                    <li class="quantity"> 1</li>
+                    <li class="goods-operate">
+                        <a href="">催发货</a>
+                        <br>
+                        <a href="">申请退款</a>
+                    </li>
+                    <li class="total-price"> ￥180.00</li>
+                    <li class="trade-state">
+                        待发货
+                        <br>
+                        <!-- <a href="">订单详情</a>
+                        <br> --> 
+                        <a href="">联系商家</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 代收货 -->
+        <div class="content5" id="demo5">
+            <ul class="order-list">
+                <li class="order-li" id="first-li">宝贝</li>
+                <li class="order-li">单价</li>
+                <li class="order-li">数量</li>
+                <li class="order-li">商品操作</li>
+                <li class="order-li">实付款</li>
+                <li class="order-li">交易状态</li>
+            </ul>
+            <div class="order-message">
+
+                <ul class="list-message">
+                    <li >&emsp;&emsp;&emsp;日期：2022-10-02</li>
+                    <li >订单号:98971356</li>
+                    <li style="color:#936a01;">店名：IFashion专卖店</li>
+                </ul>
+                <ul class="goods-message">
+                    <a href="">
+                        <li><img src="../html/img/商品主页/20.png" alt="" width="160px" height="100px"></li>
+
+                        <li><div class="mes">诗尼女包2022新款小众原创花朵淑女小清新时尚手提包单肩斜挎包</div>
+                            <br>
+                            <div>颜色分类：白色  </div>
+                        </li>
+                    </a>
+                    <li> ￥580.00 </li>
+                    <li class="quantity"> 1</li>
+                    <li class="goods-operate">
+                        <a href="">催发货</a>
+                        <br>
+                        <a href="">申请退款</a>
+                    </li>
+                    <li class="total-price"> ￥580.00</li>
+                    <li class="trade-state">
+                        待发货
+                        <br>
+                        <!-- <a href="">订单详情</a>
+                        <br> --> 
+                        <a href="">联系商家</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 已完成 -->
+        <div class="content6" id="demo6">
+            <ul class="order-list">
+                <li class="order-li" id="first-li">宝贝</li>
+                <li class="order-li">单价</li>
+                <li class="order-li">数量</li>
+                <li class="order-li">商品操作</li>
+                <li class="order-li">实付款</li>
+                <li class="order-li">交易状态</li>
+            </ul>
+            <div class="order-message">
+
+                <ul class="list-message">
+                    <li >&emsp;&emsp;&emsp;日期：2022-10-02</li>
+                    <li >订单号:98321356</li>
+                    <li style="color:#936a01;">店名：旺仔旗舰店</li>
+                </ul>
+                <ul class="goods-message">
+                    <a href="">
+                        <li><img src="../html/img/商品主页/26.png" alt="" width="160px" height="100px"></li>
+
+                        <li><div class="mes">旺旺大礼包旺仔零食整箱健康营养小吃儿童吃货生日小礼物休闲食品</div>
+                            <br>
+                            <div>颜色分类：大包  </div>
+                        </li>
+                    </a>
+                    <li> ￥79.00 </li>
+                    <li class="quantity"> 1</li>
+                    <li class="goods-operate">
+                        <br>
+                        <a href="">申请退货</a>
+                    </li>
+                    <li class="total-price"> ￥79.00</li>
+                    <li class="trade-state">
+                        已完成
+                        <br>
+                        <!-- <a href="">订单详情</a>
+                        <br> --> 
+                        <a href="">联系商家</a>
+                    </li>
+                </ul>
+            </div>
+        </div>     
+    </div>
+     <script>
+    function deleteCurrentRow(obj){
+    var tr=obj.parentNode.parentNode;
+    var tbody=tr.parentNode;
+    tbody.removeChild(tr);
+    }
+     </script>   
+    <script src="../js/个人主页.js"></script>
+
+</body>
+</html>

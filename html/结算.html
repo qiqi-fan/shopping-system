@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结算</title>
+    <link rel="stylesheet" href="../css/结算.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/结算.js"></script>
+</head>
+<body>
+    <!-- 头部栏 -->
+    <div class="nav">
+        <a href="#" class="into">Linda</a>
+        <div class="part">
+            <a href="首页.html">商城首页</a>
+            <a href="店铺及商品.html">店铺及商品</a>
+            <a href="购物车.html">购物车</a>
+            <a href="个人主页.html">个人主页</a>
+        </div>
+        <a href="#" class="help">帮助及反馈 </a>
+    </div>
+    <!-- logo及流程 -->
+    <div class="search w">
+        <div class="logo"><img src="../html/img/logo.png" alt="logo" title="logo" width="200px" ></div>
+        <div class="path">
+            <ol>
+                <li>
+                    <div class="path1">1
+                        <div class="num1"><b>进入购物车</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path2">2
+                        <div class="num1"><b>拍下商品</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path3">3
+                        <div class="num1"><b>付款</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path4">4
+                        <div class="num1"><b>查看订单</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path5">5
+                        <div class="num1"><b>完成订单</b></div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- 收货地址确认 -->
+    <div class="w bg">
+        <div class="w bd">
+            <div class="bbd">
+                <h2>确认收货地址</h2>
+                <a href="../html/个人主页.html" class="more" onclick="addnewaddress()">管理收货地址</a>
+                <img src="../images/dizhi.png">
+            </div>
+            <!-- 线 -->
+            <div class="ll"></div>
+        </div>
+        <!-- 收货地址选择 -->
+        <div class="address-list">
+            <div class="addr-item">
+            <label>
+                <input type="radio" name="chioce">
+                <span class="choice">浙江杭州下沙浙江理工大学(张三收)19818515545</span>
+            </label>
+            </div>
+            <div class="addr-item">
+                <label>
+                    <input type="radio" name="chioce">
+                    <span class="choice">浙江温州鹿城区(刘素收)13434561234</span>
+                </label>
+            </div>
+            <!-- 添加新地址 -->
+            <div class="new">
+                <input type="button" value="添加新地址" onclick="addnewaddress()">
+            </div>
+        </div>
+        <!-- 确认订单信息 -->
+        <div class="order">
+            <div class="w bbd">
+                <h2>确认订单信息</h2>
+            </div>
+            <!-- 线 -->
+            <div class="ll"></div>
+            <div class="lie">
+                <div class="message">店铺宝贝</div>
+                <div class="money">单价</div>
+                <div class="num">数量</div>
+                <div class="all">小计</div>
+            </div>
+            <div class="kuai">
+                <ul>
+                    <li>
+                        <div class="message">
+                            <div class="photo"><img src="../html/img/商品6/6.1.jpg"></div>
+                            <div class="test">JWNEED小狗格子毛衣男女秋冬复古奶系软糯显白休闲百搭情侣···</div>
+                        </div>
+                        <div class="money">￥98.00</div>
+                        <div class="num">1
+                            <!-- <input type="button" class="decrease" value="-">
+                            <input type="text" class="quantity" value="1"/>
+                            <input type="button" class="increase" value="+"> -->
+                            
+                        </div>
+                        <div class="all">￥98.00</div>
+                    </li>
+                    <li class="tuitebao" id="tuitebao">
+                        <div class="message">
+                            <div class="photo"><img src="../html/img/商品1/1.1.jpg"></div>
+                            <div class="test">小众设计大容量手提帆布包女夏2022新款时尚印花蝴蝶结单肩托···</div>
+                        </div>
+                        <div class="money">￥29.90</div>
+                        <div class="num">1</div>
+                        <div class="all">￥29.90</div>
+                    </li>
+                    <li class="lining" id="lining">
+                        <div class="message">
+                            <div class="photo"><img src="../html/img/商品2/2.1.jpg"></div>
+                            <div class="test">李宁板鞋女鞋天迹2022新款鞋子潮流涂鸦滑板鞋运动鞋情侣小···</div>
+                        </div>
+                        <div class="money">￥378.00</div>
+                        <div class="num">1</div>
+                        <div class="all">￥378.00</div>
+                    </li>
+                </ul>
+                <div class="total">合计￥127.90</div>
+            </div>
+            <div class="int">
+                <input type="button" value="结算支付" onclick="Show();">
+            </div>
+        </div>
+        
+    </div>
+    <!-- 支付弹窗 -->
+    <div class="pay">
+        <!-- 新建用户弹窗 -->
+        <div id="shade" class="c1 hide">
+            <div id="modal" class="c2 hide">
+                <!-- 支付标题 -->
+                <div class="pay-box">
+                    <div class="pay-title">
+                        <h2>支付订单</h2>
+                    </div>
+                    <!-- 回退按钮 -->
+                    <div class="quit" >
+                        <input type="button" value="X" onclick="Hide();">
+                    </div>
+                </div>
+                <!-- 支付方式选择 -->
+                <div class="pay-type">
+                    <span>请选择支付方式：</span>
+                    <span class="kong"></span>
+                    <input type="text" id="comname" list="comlist" value="" class="qbox" placeholder="选择您的支付方式">
+                    <datalist id="comlist">
+                        <option>选择您的支付方式</option>
+                        <option>支付宝</option>
+                        <option>员工卡</option>
+                        <option>微信</option>
+                    </datalist>
+                    <input type="button" value="确认支付方式" class="pay-type-check" onclick="checktype();">
+                </div>
+                <!-- 卡内积分余额 -->
+                <div class="card-cradit" id="card-cradit">
+                    <span>您卡内余额剩余：</span>
+                    <span class="cradit">100</span>
+                    <span>预计可抵10元</span>
+                </div>
+                <!-- 仍需支付 -->
+                <div class="pay-still" id="pay-still">
+                    <span>您仍需支付：</span>
+                    <span>10元</span>
+                </div>
+                <!-- 扫支付码 -->
+                <div class="pay-code" id="pay-code">
+                    <span>请扫码：</span>
+                    <span class="kong"></span>
+                    <img src="../html/img/付款码/QQ图片20221007223935.png" alt="" >
+                </div>
+                <!-- 支付确认 -->
+                <div class="pay-btn">
+                    <input type="button" value="取消支付" class="pay-false" onclick="payno();">
+                    <input type="button" value="确认支付" class="pay-true" onclick="payok();">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

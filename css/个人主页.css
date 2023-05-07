@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+    height: 1500px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.nav {
+    height: 41px;
+    border-top: 3px solid #62887f;
+    border-bottom: 1px solid #edeef0;
+    background-color: #fcfcfc;
+    line-height: 41px;
+}
+
+.nav a {
+    display: inline-block;
+    height: 41px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #eee;
+    color: #62887f;
+}
+
+.nav .into {
+    float: left;
+    margin-left: 30px;
+}
+
+.nav .part {
+    display: inline-block;
+    margin-left: 10em;
+    position: absolute;
+    height: 41px;
+    left: 15%;
+}
+
+.nav .part a {
+    margin-left: 5em;
+}
+
+.nav .help {
+    float: right;
+    margin-right: 30px;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.search {
+    height: 100px;
+    margin-top: 30px;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(0, 195, 255);
+    margin-left: 200px;
+}
+
+
+.w h1 {
+    float: right;
+    margin-right: 200px;
+}
+
+.message {
+    width: 1200px;
+    height: 782px;
+    /* background-color: antiquewhite; */
+    margin: 10px auto;
+    /* border: 1px solid black; */
+}
+
+.topper {
+    width: 100%;
+    height: 80px;
+    background-color: #7A9D96;
+
+}
+
+.topper-list {
+    width: 100px;
+    height: 80px;
+    float: left;
+    line-height: 80px;
+    margin-left: 300px;
+    color: black;
+    margin-left: 15px;
+    padding-left: 30px;
+
+}
+
+.topper>button {
+    width: 200px;
+    background-color: #7A9D96;
+    margin-left: 300px;
+    height: 79px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.left {
+    width: 200px;
+    height: 700px;
+    background-color: #edeef0;
+}
+.btn{
+    text-align: center;
+    /* width: 200px; */
+}
+.btn>a {
+    height: 60px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    line-height: 60px;
+    border-left: none;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+}
+.btn a:hover{
+    color: #eee;
+}
+
+
+/* button:hover{
+    background-color: aquamarine;
+} */
+
+.content {
+    margin-left: 200px;
+    margin-top: -700px;
+}
+
+.content-ul {
+    margin: 40px 100px;
+}
+
+.content-li {
+    height: 200px;
+    /* border: 1px solid black; */
+    /* border: none; */
+}
+
+.btn>button{
+    width: 200px;
+    height: 40px;
+    outline: none ;
+    border: 0;
+    /* background-color: #eee; */
+}
+.person-img {
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+}
+
+.content-input {
+    width: 150px;
+    height: 30px;
+    /* border: none; */
+    border:1px solid rgb(216, 214, 214) ;
+    background-color: aliceblue;
+}
+
+.content-btn {
+    height: 33px;
+    width: 80px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0%);
+    color: rgb(55, 106, 201);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#phone ,#worker,#jifen,#card,#company{
+    margin-top: -150px;
+}
+#company select{
+    width: 150px;
+    height: 30px;
+    /* border: none; */
+    border:1px solid rgb(216, 214, 214) ;
+    background-color: aliceblue;
+}
+
+/* 设置表格 */
+.all-address {
+    border: none;
+}
+
+.content2 {
+    width: 1000px;
+    height: 700px;
+    margin-left: 200px;
+    margin-top: -700px;
+    overflow: auto;
+}
+
+.all-address,
+.address {
+    margin: 40px 100px;
+}
+
+.address-li {
+    height: 60px;
+    font-size: 16px;
+}
+
+.address-li>input {
+    width: 400px;
+    height: 30px;
+    outline: none;
+}
+
+.btn2 {
+    height: 40px;
+    width: 60px;
+    font-size: 16px;
+    /* margin-left: 260px; */
+    background-color: #7A9D96;
+    color: white;
+}
+
+#moren {
+    width: 30px;
+    height: 16px;
+
+}
+
+.all-address {
+    text-align: center;
+    margin-left: 30px;
+}
+
+tr {
+    height: 30px;
+
+}
+
+.first-tr {
+    height: 50px;
+    background-color: #a6d1c8;
+}
+
+/* 我的订单 */
+.order {
+    width: 1200px;
+    height: 782px;
+    /* background-color: antiquewhite; */
+    margin: 10px auto;
+    /* border: 1px solid black; */
+
+}
+
+.content3,
+.content4,
+.content5,
+.content6 {
+    margin-top: -650px;
+    margin-left: 220px;
+}
+
+.order-list {
+    width: 960px;
+    height: 50px;
+    background-color: #cfe3df;
+
+    /* border: 1px solid rgb(193, 190, 190); */
+}
+
+.order-li {
+    width: 120px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+
+}
+
+#first-li {
+    width: 250px;
+    padding-left: 100PX;
+}
+
+.order-message {
+    width: 960px;
+    height: 200px;
+    /* background-color: rgb(196, 208, 228); */
+    margin-top: 30px;
+    border: 1px solid rgb(193, 190, 190);
+
+}
+
+.list-message {
+    width: 960px;
+    height: 50px;
+    background-color:#cfe3df;
+
+}
+
+.list-message li {
+    width: 250px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    /* margin-top: 30px; */
+}
+
+.goods-message li {
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.quantity {
+    padding-left: 70px;
+    width: 60px;
+}
+
+.goods-operate {
+    padding-left: 40px;
+}
+
+.total-price {
+    padding-left: 40px;
+}
+
+.trade-state {
+    padding-left: 50px;
+}
+
+#file {
+    display: none;
+}
+
+#my-img {
+    cursor: pointer;
+}
+
+.distpicker {
+    margin-left: 91px;
+    margin-top: -22px;
+}
+
+.distpicker div {
+    float: left;
+
+}
+
+.distpicker div select {
+    height: 30px;
+    margin-left: 20px;
+}
+/* 遮罩层 */
+#cover{
+    background: #000; 
+    position: absolute; 
+    left: 0;
+    top:0;
+    height: 200%;
+    width: 100%;
+    filter: alpha(opacity=30); 
+    opacity: 0.3; 
+    display: none; 
+    z-index: 200;
+}
+/* 弹窗 */
+.changeAddr{
+    /* font-size: 10px; */
+    position: absolute;
+    left: 20%;
+    top: 200px;
+    background-color: #fafbfb;
+    width: 800px;
+    z-index: 999;
+    border: 2px solid rgb(171, 171, 171);
+    /* display: none; */
+}
+.changeAddr p{
+    background-color: #edeef0;
+    height: 30px;
+    line-height: 30px;
+}
+i{
+    font-size: 20px;
+    color: #000;
+    float: right;
+    margin-right: 10px;
+    line-height: 30px;
+    cursor: pointer;
+}
+/* 积分弹出层 */
+
+.jifendiv,.tel-check,.bindcard{
+    position: absolute;
+    left: 40%;
+    top: 250px;
+    border: 1px solid rgb(215, 215, 215);
+    background-color: #ffffff;
+    width: 400px;
+    height: 300px;
+    box-shadow: 2px 2px 2px rgb(192, 192, 192);
+    z-index: 999;
+}
+.jifendiv p,.bindcard p,.tel-check p{
+    background-color: #edeef0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.jifendiv table {
+    margin-top: 20px;
+    border: none;
+}
+.jifendiv table tr td {
+    width: 100px;
+    text-align: center;
+}
+.jifendiv table tr td:nth-child(2){
+    color: rgb(228, 128, 57);
+}
+/* 订单显示 */
+.mes{
+    display:-webkit-box;
+    color: rgb(81, 80, 80);
+    width: 150px;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:2;/*控制行数*/
+    -webkit-box-orient:vertical;
+    overflow:hidden; 
+}
+/* 手机验证弹出层 */
+.tel-check{
+    /* display: none; */
+    height: 160px;
+    /* padding-top: 10px; */
+    /* padding-left: 10px; */
+    z-index: 999;
+}
+.tel-check input{
+    margin-top: 10px;
+    height: 25px;
+}
+#ver-code{
+    border: none;
+    background-color: #ffffff;
+    color: rgb(220, 162, 85);
+    cursor: pointer;
+}
+.tel-check button,.bindcard button{
+    margin-left: 140px;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    background-color: #7A9D96;
+    cursor: pointer;
+}
+#sucess{
+    font-size: 14px; 
+    color:red;
+    height: 20px;
+    line-height: 20px;
+}
+/* 绑定员工卡 */
+.bindcard{
+    height: 140px;
+    line-height: 50px;
+    /* padding-left: 20px; */
+}
+.bindcard input{
+    width: 150px;
+}

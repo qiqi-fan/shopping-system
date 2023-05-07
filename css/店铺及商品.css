@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+    /* height: 1500px; */
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    height: 41px;
+    border-top: 3px solid #62887f;
+    border-bottom: 1px solid #edeef0;
+    background-color: #fcfcfc;
+    line-height: 41px;
+}
+
+.nav a {
+    display: inline-block;
+    height: 41px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #eee;
+    color: #62887f;
+}
+
+.nav .into {
+    float: left;
+    margin-left: 30px;
+}
+
+.nav .part {
+    display: inline-block;
+    margin-left: 10em;
+    position: absolute;
+    height: 41px;
+    left: 15%;
+}
+
+.nav .part a {
+    margin-left: 5em;
+}
+
+.nav .help {
+    float: right;
+    margin-right: 30px;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.search {
+    height: 100px;
+    margin-top: 30px;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-left: 180px;
+    margin-top: 10px;
+}
+
+
+.w h1 {
+    float: right;
+    margin-right: 200px;
+}
+
+.searchbox {
+    float: left;
+    width: 413px;
+    height: 42px;
+    background-color: rgb(224, 224, 224);
+    margin-left: 70px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.searchbox input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-right: 0px;
+    color: rgb(48, 47, 47);
+    font-size: 14px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.searchbox input:hover {
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px 0 0 10px;
+}
+
+.searchbox button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 10px;
+}
+
+.searchbox button:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.fenlei {
+    height: 60px;
+}
+
+.choice {
+    background-color: #d7e1df;
+    margin-top: 30px;
+    height: 30px;
+    width: 90px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    cursor: pointer;
+    /* border: 1px solid #62887f; */
+}
+
+.line {
+    background-color: #62887f;
+    height: 10px;
+}
+
+
+.chanpin {
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.gan {
+    margin-top: 30px;
+}
+
+.gang {
+    height: 60px;
+    line-height: 60px;
+    border-width: 1px 0px;
+    border-color: rgb(214, 214, 214);
+    border-style: solid;
+}
+
+.gang h3 {
+    float: left;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #112f47;
+    cursor: pointer;
+}
+
+
+.gang ul {
+    float: left;
+    margin-left: 40px;
+}
+
+.gang ul li {
+    float: left;
+    cursor: pointer;
+}
+
+.gang ul li a {
+    padding: 0 30px;
+    font-size: 13px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+
+}
+
+.gang ul li a:hover {
+    color: #226a91;
+}
+
+.clearfix li:hover {
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+}
+
+.clearfix li img {
+    height: 160px;
+}
+
+.goods {
+    margin-top: 50px;
+}
+
+.goods ul {
+    width: 1225px;
+}
+
+.goods ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(166, 165, 165);
+}
+
+.goods ul li img {
+    width: 100%;
+
+}
+
+h4 {
+    margin: 10px 4px 1px 4px;
+    font-size: 14px;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+
+/* .info{
+    border: 1px solid;
+} */
+.info {
+    margin: 10px 10px 0 20px;
+    font-size: 12px;
+    color: rgb(93, 92, 92);
+}
+
+.goods .info span {
+    font-size: 20px;
+    color: #ff7c2d;
+}
+
+.info p,
+.info span {
+    float: left;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.screen {
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 5000px;
+}
+
+.all ol {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+    font-size: 0;
+}
+
+.all ol li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.all ol li.current {
+    background: #4390b9;
+}
+
+/* 添加 */
+.all-things,
+.all-shops {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.shops ul {
+    background-color: #e9ebea;
+    width: 1200px;
+    height: 150px;
+    /* overflow-y: hidden; */
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.shops ul li {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 45px;
+}
+
+.shops ul li img {
+    height: 120px;
+    width: 120px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#star {
+    /* opacity: 1; */
+    /* color: rgb(249, 215, 45); */
+    color: #ccc;
+}
+
+#search-bb {
+    color: #050505;
+}

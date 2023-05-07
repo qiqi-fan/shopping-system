@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/购物车.css">
+    <script src="../js/购物车.js"></script>
+</head>
+<body>
+    <!-- 头部栏 -->
+    <div class="nav">
+        <a href="#" class="into">Linda</a>
+        <div class="part">
+            <a href="首页.html">商城首页</a>
+            <a href="店铺及商品.html">店铺及商品</a>
+            <a href="购物车.html">购物车</a>
+            <a href="个人主页.html">个人主页</a>
+        </div>
+        <a href="#" class="help">帮助及反馈 </a>
+    </div>
+    <!-- logo及流程 -->
+    <div class="search w">
+        <div class="logo"><img src="../html/img/logo.png" alt="logo" title="logo" width="200px" ></div>
+        <div class="path">
+            <ol>
+                <li>
+                    <div class="path1">1
+                        <div class="num1"><b>进入购物车</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path2">2
+                        <div class="num1"><b>拍下商品</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path3">3
+                        <div class="num1"><b>付款</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path4">4
+                        <div class="num1"><b>查看订单</b></div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <div class="path5">5
+                        <div class="num1"><b>完成订单</b></div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="w bg">
+        <div class="w bd">
+            <h2>购物车</h2>
+        </div>
+        <!-- 商品列表 -->
+        <div>
+            <div class="lie">
+                <div class="check"><input type="checkbox" id="check-box">全选</div>
+                <div class="message">商品信息</div>
+                <div class="money">单价</div>
+                <div class="num">数量</div>
+                <div class="all">总价</div>
+                <div class="action">操作</div>
+            </div>
+            <div class="kuai">
+                <ul>
+                    <li class="maoyi" id="maoyi">
+                        <div class="check"><input type="checkbox" id="check" name="user" value="98"></div>
+                        <div class="message">
+                            <div class="photo"><img src="../html/img/商品6/6.1.jpg"></div>
+                            <div class="test">JWNEED小狗格子毛衣男女秋冬复古奶系软糯显白休闲百搭情侣···</div>
+                        </div>
+                        <div class="money">￥98.00</div>
+                        <div class="num">1
+                            <!-- <input type="button" class="decrease" value="-">
+                            <input type="text" class="quantity" value="1"/>
+                            <input type="button" class="increase" value="+"> -->
+                            
+                        </div>
+                        <div class="all">￥98.00</div>
+                        <div class="action">
+                            <div class="btnn">
+                                <input type="button" value="移入收藏夹" class="move">
+                                <input type="button" value="删除" class="delete">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tuitebao" id="tuitebao">
+                        <div class="check"><input type="checkbox" id="check" name="user" value="29.9"></div>
+                        <div class="message">
+                            <div class="photo"><img src="../html/img/商品1/1.1.jpg"></div>
+                            <div class="test">小众设计大容量手提帆布包女夏2022新款时尚印花蝴蝶结单肩托···</div>
+                        </div>
+                        <div class="money">￥29.90</div>
+                        <div class="num">1</div>
+                        <div class="all">￥29.90</div>
+                        <div class="action">
+                            <div class="btnn">
+                                <input type="button" value="移入收藏夹" class="move">
+                                <input type="button" value="删除" class="delete" onclick="deletetuitebao()">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lining" id="lining">
+                        <div class="check"><input type="checkbox" id="check" name="user" value="378"></div>
+                        <div class="message">
+                            <div class="photo"><img src="../html/img/商品2/2.1.jpg"></div>
+                            <div class="test">李宁板鞋女鞋天迹2022新款鞋子潮流涂鸦滑板鞋运动鞋情侣小···</div>
+                        </div>
+                        <div class="money">￥378.00</div>
+                        <div class="num">1</div>
+                        <div class="all">￥378.00</div>
+                        <div class="action">
+                            <div class="btnn">
+                                <input type="button" value="移入收藏夹" class="move">
+                                <input type="button" value="删除" class="delete" onclick="deletelining()">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="total w">
+            <input type="button" value="结算" id="jiesuan-btn" >
+            <input type="button" id="choosesum" value="计算总价">
+            <div class="jiage" id="jiage">总价：00.00</div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript" src="../js/购物车.js"></script>
+</html>
